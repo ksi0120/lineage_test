@@ -6,7 +6,7 @@ CATALOG = "classic_stable_3fqn9z_catalog"
 SCHEMA = "lineage_test"
 
 # Read from source table
-source = spark.table(f"{CATALOG}.{SCHEMA}.lineage_source")
+source = spark.table(f"{CATALOG}.{SCHEMA}.lineage_source1")
 
 # Apply perturbation: add gaussian noise, derive new columns, randomly drop ~5% of rows
 perturbed = (
